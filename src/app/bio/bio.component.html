@@ -1,1 +1,17 @@
-<p>bio works!</p>
+<section class="bio-container">
+  <!-- using the optional chaining will prevent the app from crashing  -->
+  <h1 class="dog-name">{{ dog?.name }}</h1>
+  <div class="inner-container">
+    <div class="bio-box">
+      <h2 class="bio-heading">Bio</h2>
+      <p class="bio">{{ dog?.description }}</p>
+    </div>
+    <div class="img-container">
+      <img [src]="dog?.img" [alt]="dog?.name" />
+    </div>
+  </div>
+  <div class="btn-box">
+    <!-- A link back home -->
+    <a [routerLink]="['/']" class="btn-back">Back</a>
+  </div>
+</section>
