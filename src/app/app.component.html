@@ -1,1 +1,9 @@
-<p>Hello World</p>
+<main>
+  <header class="header">
+    <!-- Using a routerLink allows to specify the route to which to go, in this case home -->
+    <a [routerLink]="['/']" class="logo"> Doggos.</a>
+  </header>
+  <section class="content">
+    <router-outlet></router-outlet>
+  </section>
+</main>
