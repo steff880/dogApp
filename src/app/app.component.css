@@ -1,0 +1,23 @@
+main {
+  background-image: url("https://img.freepik.com/free-vector/cute-pattern-with-dog-faces-bones_1191-1204.jpg?w=2000");
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.header {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  padding-inline: 100px;
+}
+
+.header .logo {
+  color: orange;
+  font-size: 40px;
+  text-decoration: none;
+}
+
+.content {
+  margin-top: 100px;
+}
