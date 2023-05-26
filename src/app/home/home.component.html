@@ -1,1 +1,11 @@
-<p>home works!</p>
+<section class="cards">
+  <!-- Since we have access to the dogsList we can iterate over it and get the data needed -->
+  <div class="card" *ngFor="let dog of dogsList">
+    <div class="carImg-box">
+      <img [src]="dog.img" [alt]="dog.name" area-hidden="true" />
+    </div>
+    <h4 class="heading">{{ dog.name }}</h4>
+    <!-- This linnk will allow us to visit the Bio page and it also receives the dog ID -->
+    <a class="link" [routerLink]="['/bio', dog.id]">Read Bio</a>
+  </div>
+</section>
