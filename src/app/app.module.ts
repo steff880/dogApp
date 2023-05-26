@@ -11,6 +11,7 @@ import { RouterModule } from '@angular/router';
 @NgModule({
   declarations: [AppComponent, HomeComponent, BioComponent],
   imports: [BrowserModule, RouterModule],
+  // Enable Router fucntionality by adding provideRouter and passing on the routes configuration
   providers: [provideRouter(routeConfig)],
   bootstrap: [AppComponent],
 })
